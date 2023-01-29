@@ -1,9 +1,19 @@
-Since no one else has compiled socat for windows, here it is.
+# This repo is a fork of [socat-1.7.3.0-windows](https://github.com/tech128/socat-1.7.3.0-windows) #
 
-I used some optimizations, which should help this version of socat stand 
-out from the rest.
+## Introduction ##
+This repository contains a compiled Socat binary for Windows with the
+required library
 
-Those optimizations were -march=i586 -flto -fomit-frame-pointer
+Some optimizations are done which should help this version of socat to
+stand up out of the rest.
 
-I didn't want to get too crazy, since that sometimes leads to weird 
-issues.
+These optimizations were -march=i586 -flto -fomit-frame-pointer
+
+## Install ##
+Run the powershell script as administrator in order to install Socat,
+this will download all necessary libs and executable and add them to
+the path: 
+
+``` powershell
+.\install.ps1
+```
