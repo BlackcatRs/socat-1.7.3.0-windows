@@ -6,7 +6,7 @@ if (! (Test-Path $Destination_path)) {
 }
 
 # Download the file
-Invoke-WebRequest -Uri "https://github.com/BlackcatRs/socat-1.7.3.0-windows/archive/refs/heads/master.zip" -OutFile "$Destination_path\socat.zip"
+Invoke-WebRequest -Uri "https://github.com/BlackcatRs/socat-1.7.3.0-windows/raw/master/socat.zip" -OutFile "$Destination_path\socat.zip"
 
 # Unzip
 Expand-Archive -Path "$Destination_path\socat.zip" -DestinationPath $Destination_path -Force
